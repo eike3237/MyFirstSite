@@ -1,0 +1,72 @@
+html{
+    margin:0;
+    padding:0;
+    font-size: 13px
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main, .content{
+    margin: 0 auto;
+    width: 96%;
+    position:relative;
+}
+
+#conteudo{
+    margin: 0 7%;
+    padding: 0 6%;
+    background-color: white;
+    font-size: 200%;
+    margin-bottom: 0%;
+    line-height: 135%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 7%;
+}
+
+.container{
+    background-color:#444444;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 1%;
+}
+
+.quemsomostext h1{
+    text-align: center;
+}
+
+.quemsomostext p{
+    text-align: justify;
+    line-height: 135%;
+}
+
+.creditos{
+    height: auto;
+    margin: 0;
+}
+
+.creditos h2{
+    text-align: center;
+    font-size: 100%;
+}
+
+.creditos img{
+    float: left;
+    width: 20%;
+    height: auto;
+    margin: 1% 3%;
+}
+
+.creditos p{
+    text-align: justify;
+    line-height: 135%;
+    margin: 0 0%;
+}
+
+hr{
+    clear: both;
+}

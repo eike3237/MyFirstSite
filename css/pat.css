@@ -1,0 +1,78 @@
+html{
+    margin:0;
+    padding:0;
+    font-size: 13px
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main, .content{
+    margin: 0 auto;
+    width: 96%;
+    position:relative;
+}
+
+#conteudo{
+    margin: 0 7%;
+    padding: 0 6%;
+    background-color: white;
+    font-size: 200%;
+    margin-bottom: 0%;
+    line-height: 135%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 7%;
+}
+
+.container{
+    background-color:#444444;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 1%;
+}
+
+.pattext h1{
+    text-align: center;
+}
+
+.pattext h2{
+    text-align: center
+}
+
+.imgpat img{
+    height: auto;
+    max-width: 90%;
+    margin-bottom: 2%;
+    margin-left: 16%;
+}
+
+.imgpat2 img{
+    height:auto;
+    max-width:90%;
+    margin: 2%;
+    margin-left:4%;
+    display: block;
+}
+
+.imgpat3 img{
+    height: auto;
+    max-width: 90%;
+    margin: 2%;
+    margin-left: 5%;
+}
+
+.textos{
+    line-height: 135%;
+}
+
+figcaption{
+    font-size: 40%;
+    text-align: center;
+    margin-left: 15%;
+    width: 60%;
+    margin-top: -1%;
+}

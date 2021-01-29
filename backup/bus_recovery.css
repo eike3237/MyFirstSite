@@ -1,0 +1,52 @@
+html{
+    margin:0;
+    padding:0;
+    font-size: 13px
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+main, .content{/*CADA CHECK É Q TA CERTO A PARTE DO CODIGO*/
+    margin: 0 auto;
+    width: 96%;/*alterado para 96 pra compensar a margem que foi colocada no Content das colunas*/
+    position:relative;/*Check*/
+}
+#conteudo{
+    margin: 0 7%;/*coloquei 7% pra obedecer a regra de IHC que diz pra ter no maximo 75 caracteres por linha*/
+    padding: 0 6%;
+    background-color: white;/*testes só para saber como ia ser o esquema da margem*/
+    font-size: 200%;
+    margin-bottom: 0%;
+    line-height: 135%;/*espaçamento entre linhas*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 7%;
+}
+.container{
+    background-color:#444444;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 1%;
+}
+/*Nao precisa por o do footer pq como linkamos os 2 css eles pegam cada coisa de onde precisa, os de cima foram colocados só por garantia*/
+.imgbus figure img{
+    max-width: 90%;
+    margin-left: 8%;
+    height: auto;
+    width: 84%;/*adicionar width pra margin-left poder ser menor e ficar bom em aparelhos mobile tambem*/
+}
+.imgbus2 img{
+    max-width: 90%;
+    margin-left: 9%;
+    height: auto;
+    margin-bottom: 2%;
+    width: 75%;/*só caso precise aumentar a foto*/
+}
+.imgbus3 img{
+    max-width:90%;
+    margin-left:2%;
+    height: auto;
+    margin-bottom: 2%;
+}

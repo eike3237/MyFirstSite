@@ -1,0 +1,222 @@
+html{
+    margin:0;
+    padding:0;
+    font-size: 13px
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+main, .content{/*CADA CHECK É Q TA CERTO A PARTE DO CODIGO*/
+    margin: 0 auto;
+    width: 96%;/*alterado para 96 pra compensar a margem que foi colocada no Content das colunas*/
+    position:relative;/*Check*/
+}
+.header{
+    width: 100%;
+    background-color: black;/*cor da parte de trás do logo e quem somos !MUDAR PARA BRANCO, DEIXEI COR FORTE PRA SABER ONDE ESTA!*/
+    height: 60px;/*altura de onde fica o logo tem q ser em px mesmo*/
+}
+.header1{
+    padding-left: 5%;/*parte q da a margem a esquerda do logo LEVAR EM CONSIDERAÇÃO POSSIBILIDADE DE DIMINUIR*/
+}
+.logo a{
+    float: left;/*flutuar o logo a esquerda faz q a parte do quem somos vá para o lado dele*/
+    padding: 15px 6px;/*Padding é margem interna do logo o espaço dentro de onde a imagem vai ser inserida, cria um box +/-*/
+    padding: left 13px;/*uma margem interna maior pra parte da esquerda*/
+    width: 70%;/*aumenta a largura dele fazendo com que empurre o quem somos pra direita*/
+}/*CHECK*/
+.quem-somos a{
+    width: 18%;/*primeira alteração foi pra debaixo do logo*/
+    float: right;/*faz com que volte pra direita do logo*/
+    padding: 15px 6px;/*mesma largura de todos os lados da box do logo, pra ficarem alinhado; PARA AUMENTAR O TAMANHO NESSE E NO LOGO ACRESCENTAR MAIS UMA OPÇÃO DE PX E DEIXAR A 2 EM 7PX E A PRIMEIRA AUMENTAR "15PX 7PX Exemplo e mudar o Heigth do header 1tbm*/
+}/*FIM DAS PRIMEIRAS DIVS DO HEADER DA LOGO, CHECK*/
+.menu-links{
+    width: 100%;/*primeira tentativa mudou nada*/
+    float: left;
+    position:relative;/*até o fim dessa escrita nao alterou NADA*/
+}
+.header2{
+    background-color: #231f20;/*nao alterando cor das listas nao sei pq*/
+    width: 100%;
+    margin: 0 15%;/*distancia entre os textos entre si, 1°valor margens Up Down, 2°valor margem Left, Right*/
+    margin-top: 15%;/*originalmente estava em 15 px tentando por em porcentagem*/
+}/*sem alteração nenhuma ate aqui*/
+.menu-url{/*Essa é a 2 parte do menu-links pra configurar individualmente o fundo, provavelmente por causa de efeito*/
+    height: 10%;/*altura original de 80px tentando por em porcentagem primeiro*/
+    border-bottom: 1% solid #efefef;/*originalmente > 3px solid cor a mesma; aparentemente arruma a largura da borda, tipo da borda e cor(dbaixo)*/
+    background-color: #ffffff;/*cor alterada igual a do header 2, mas agora mudou por alguma forma*/
+    width: 100%;/*largura copiada do header 2*/
+}/*nesse comando o header 2 começou a ser alterado, começando pela cor que foi mudada; CHECK!*/
+.menu ul li{/*para alterar os itens da lista do menu*/
+    display: inline-block;/*deixa em linha horizontal bloqueadas; ja sumiu os pontos da lista nao precisou usar o style none*/
+    color: #8b8b8b;/*cor das letras*/
+    margin-left: 8%;/*espaçamento entre as letras do header 2*/
+    height: 30px;/*em px pq em % nao mudou nada- 11/05 Originalmente 50px mudei e vou ter q diminuir margin top das letras do header*/
+    margin-top: 1%;/*originalmente era de valor 1 % mas a pedido do medina foi alterado*/
+}
+.menu ul li:hover{
+    height: 20px;
+    border-bottom: 2px solid #91cc04;/*parte embaixo da letra ao passar mouse em cima; efeito de aparecer barra embaixo - Original #ffffff > Hover*/
+}
+.menu ul li a:hover{
+    color:#91cc04;/*Parte que determina a cor do hover qnd passr mouse em cima da letra*/
+}
+.menu ul li a{
+    color: #070707;
+    text-decoration: none;/*retirar decoração da tag "a" e da lista*/
+    font-size: 150%;/*fonte original 18px*/
+    text-decoration: uppercase; /*algum efeito q n entendi qual kkkj*/
+}
+.menu{/*parte onde a lista ta dentro*/
+    width:90%;/*original 60% é pique o espaçamento do menu*/
+    float:left;/*flutua a esquerda mas a principio sem alteração*/
+    padding-left: 20px;/*empurra a primeira parte do menu, a home e outros*/
+}/*CHECK TDS ACIMA PRATICAMENTE, A PARTIR DAQUI COMEÇA A PARTE DA IMAGEM CENTRAL*/
+.menu-links2 img{/*tentativa de colocar a imagem no meio e depois alinha o resto na margem nela*/
+    clear:both;
+    width: 100%;/*deixa a imagem da foto na sua resolução maxima*/
+    position: relative;
+}/*ERRO DE DEIXAR A IMAGEM OCUPANDO TODA A PARTE E OS BOTÕES FUNCIONAREM AO MESMO TEMPO; ARRUMEI TIRANDO O FLOAT APARENTEMENTE*/
+.texto-destaque{
+    text-align:center;
+}
+.texto-destaque h1{
+    color: #818181;
+    font-size: 290%;/*sem uppercase deixa 320*/
+    text-transform: uppercase;/*esse efeito transforma a fonte em algo maior que a fonte mostra, tudo em maiuscula*/
+    clear:both;/*desnecessario apagar dps*/
+}/*Check*/
+.texto-destaque p{
+    clear: both;/*mudou nada mas garantia*/
+    font-size: 160%;/*arrumar dps das margens no html pra manter o textos justificado*/
+    text-transform:uppercase;
+    margin:0 10%;
+}/*Check*/
+.bloco-imagens-texto {/*AQUI O PROXIMO AQUI TD CERTO PRA FORMULAÇÃO DOS COL*/
+    background-color: #eeeeee;
+}
+.bloco-imagens-texto:after {
+    width: 100%;
+    display: inline-block;
+    content: '';
+    height: 5%;
+    background: #eeeeee;
+}
+.bloco-imagens-texto:before {
+    width: 100%;
+    display: inline-block;
+    content: '';
+    height: 53px;/*era 52px*/
+    background: #ffffff;
+    background-image: url('../img/setinha.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}/*blocos sendo alterados do outro html*/
+
+.col-1{/*retirado as margin-left que tinham pois foram colocadas no inline no html Cotent style*/
+    float: left;
+    text-align:center;/*align do texto em relação a imagem*/
+    margin-top: 5%;/*mudou o espaço em relação a parte de cima do texto*/
+    font-size: 20px;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 2%;
+}
+.col-2{/*retirado as margin-left que tinham pois foram colocadas no inline no html Cotent style*/
+    text-align: center;
+    float: left;/*deixa a coluna da bike ao lado da do buso*/
+    margin-top: 5%;/*mesma margin do top de cima pra alinharem*/
+    font-size: 20px;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-left: 2%;
+}
+.col-2 img{
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.col-3{/*retirado as margin-left que tinham pois foram colocadas no inline no html Cotent style*/
+    float:left;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 20px;
+    border: 1px solid #c5c5c5;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 2%;
+}
+.col-1 a{
+    text-decoration: none;
+    color: black;
+        
+}
+.col-1 a:hover{
+    text-decoration: underline;
+    color: #818181;
+}
+.col-2 a{
+    text-decoration: none;
+    color: black;
+        
+}
+.col-2 a:hover{
+    text-decoration: underline;
+    color: #818181;
+}
+.col-3 a{
+    text-decoration:none;
+    color: black;
+}
+.col-3 a:hover{
+    text-decoration: underline;
+    color: #818181;
+}
+/*Footer*/
+.footer{
+    clear:both;
+    background-color: #221d22;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+    color: #eeeeee;
+}
+.logo2 a{
+    float: left;
+    width:80%;
+    padding-left: 3%;
+    padding-top: 7px;
+}
+.textofooter{
+    padding-top:5px;
+    text-align: center;
+    font-size: 130%;
+}
+/*Conteudos bike*/
+#conteudo{
+    margin: 0 7%;/*coloquei 7% pra obedecer a regra de IHC que diz pra ter no maximo 75 caracteres por linha*/
+    padding: 0 6%;
+    background-color: white;/*testes só para saber como ia ser o esquema da margem mas nao tirem*/
+    font-size: 200%;
+    margin-bottom: 0%;
+    line-height: 135%;/*espaçamento entre linhas*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 7%;
+}
+h1{
+    padding-top: 18px;
+}

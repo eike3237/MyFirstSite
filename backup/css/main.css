@@ -1,0 +1,123 @@
+html{
+    margin:0;
+    padding:0;
+    font-size: 13px
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+ul{
+    padding: 0%;/*retirado um !important*/
+}
+main, .content{/*Largura entre o logo e quem somos*/
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.menu-principal{
+    width: 100%;
+    background-color: #ffffff;
+    height: 60px;
+}
+.logo{
+    float: left;
+    padding: 7px;
+    padding-left: 13px;
+    width: 70%;
+}
+.quem-somos{
+    width: 18%;
+    float: right;
+    padding: 7px;
+}
+.header-1{
+    padding-left: 20px;/*margem pra esquerda do header parte do logo*/
+}
+.header-2{
+    background-color: #231f20;
+    width: 1500px;
+    margin: 0 15%;/*distancia da margem de todos os textos que estao no header*/
+    margin-top: 15px;
+}
+.menu-urls{
+    height: 80px;/*altura da 2 parte do header*/
+    border-bottom: 3px solid #efefef;/*Borda dada embaixo pro proximo item*/
+    background-color: #231f27;
+    width: 190%;
+}
+.menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 25px;/*distancia entre cada opção do header*/
+    height: 50px;
+}
+.menu ul li:hover{
+    border-bottom: 2px solid #159370;/*parte embaixo da letra ao passar mouse em cima - Original #ffffff > Hover*/
+}
+.menu ul li a:hover{
+    color: #ffffff;/*Parte que deternuba a cor do hover qnd passr mouse em cima*/
+}
+.menu ul li a{
+    color: #91cc04;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu{
+    width: 60%;/*priginal 60%*/
+    float: left;
+    padding-left: 20px;/*original 20 px*/
+}
+
+.col-100{/*textos da parte de baixo*/
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.col-100 img{
+    width: 100%;
+    position:relative;
+    float: left;
+}
+/*slick dots excluido*/
+
+    /*slick active excluido*/
+.texto-destaque{
+    text-align: center;
+}
+.texto-destaque h1{
+    color: #818181;
+    font-size: 30px;
+    text-transform: uppercase;
+    clear:both;
+}
+.texto-destaque strong{
+    color: #646464;
+}
+.texto-destaque p{
+    clear:both;
+    font-size: 15px;
+    color: #9a9a9a;
+}
+.col-1{
+    float: left;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.col-2{
+    text-align: center;/*texto que na principal ta azul*/
+    float: left;
+    margin-top: 5%;
+    margin-left:1%
+}
+.col-3{
+    text-align: center;
+    margin-top: 6%;
+    margin-right: 12%;
+}
+.conteudo{
+    width: 0%
+}
